@@ -6,3 +6,4 @@ faiss-cpu
 langchain-tavily
 pypdf
 python-dotenv
+PyCryptodome
