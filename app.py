@@ -179,8 +179,8 @@ def setup_search_tool():
 
 
 # --- STREAMLIT UI ---
-st.title("📄 IntelliKMS for Legal Docs")
-st.info("Ask questions about your legal documents or get answers from the web.")
+st.title("📄 IntelliKMS")
+st.info("Ask questions about your documents or get answers from the web.")
 
 unified_search_function = setup_search_tool()
 
@@ -207,4 +207,5 @@ if unified_search_function:
 
         st.session_state.messages.append({"role": "assistant", "content": response_content})
 else:
+
     st.warning("Chatbot could not be initialized. Please check the setup instructions and API keys.")
