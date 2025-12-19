@@ -14,7 +14,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_tavily import TavilySearch
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain.retrievers import ContextualCompressionRetriever
-from langchain.retrievers.document_compressors import LLMChainExtractor
+#from langchain.retrievers.document_compressors import LLMChainExtractor
+from langchain_community.document_loaders import PyPDFDirectoryLoader
 
 # --- NEW SECURE API KEY AND PATH CONFIGURATION ---
 # This line loads the variables from your .env file for local development
@@ -210,4 +211,5 @@ if unified_search_function:
 else:
 
     st.warning("Chatbot could not be initialized. Please check the setup instructions and API keys.")
+
 
