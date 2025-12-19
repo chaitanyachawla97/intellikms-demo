@@ -1,6 +1,6 @@
 streamlit
-langchain
-langchain-community
+langchain>=0.3.0
+langchain-community>=0.3.0
 langchain-google-genai
 langchain-text-splitters
 langchain-tavily
@@ -8,3 +8,4 @@ faiss-cpu
 pypdf
 python-dotenv
 PyCryptodome
+
