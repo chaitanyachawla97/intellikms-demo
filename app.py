@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 # Import all the necessary LangChain components
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.document_loaders import PyPDFDirectoryLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+#from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_tavily import TavilySearch
@@ -209,3 +210,4 @@ if unified_search_function:
 else:
 
     st.warning("Chatbot could not be initialized. Please check the setup instructions and API keys.")
+
